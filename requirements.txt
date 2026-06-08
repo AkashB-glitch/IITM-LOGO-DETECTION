@@ -1,0 +1,39 @@
+# =============================================================================
+# requirements.txt — Python Dependencies for IITM Logo Misuse Detection Project
+# =============================================================================
+# Install all dependencies at once:
+#   pip install -r requirements.txt
+#
+# After installing, also install Playwright browsers:
+#   playwright install chromium
+# =============================================================================
+
+# ── Web Scraping & Browser Automation ────────────────────────────────────────
+playwright>=1.42.0           # Chromium browser automation (visit websites)
+requests>=2.31.0             # HTTP requests (APIs, image downloads)
+beautifulsoup4>=4.12.0       # HTML parsing / text extraction
+lxml>=5.1.0                  # Fast XML/HTML parser (used by BeautifulSoup)
+
+# ── Deep Learning ─────────────────────────────────────────────────────────────
+torch>=2.2.0                 # PyTorch — deep learning framework
+torchvision>=0.17.0          # Pretrained models (ResNet-50) + transforms
+Pillow>=10.2.0               # Image loading and manipulation
+
+# ── Computer Vision ──────────────────────────────────────────────────────────
+opencv-python>=4.9.0         # OpenCV — template matching
+
+# ── Data Handling ─────────────────────────────────────────────────────────────
+pandas>=2.2.0                # DataFrames for storing and filtering results
+numpy>=1.26.0                # Numerical arrays
+
+# ── Domain Analysis ───────────────────────────────────────────────────────────
+python-whois>=0.9.4          # WHOIS queries for domain ownership info
+dnstwist>=23.11.0            # Typo-squatting domain generation
+
+# ── Dashboard & Reporting ─────────────────────────────────────────────────────
+streamlit>=1.32.0            # Interactive web dashboard
+reportlab>=4.1.0             # PDF report generation
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+tqdm>=4.66.0                 # Progress bars
+python-dotenv>=1.0.0         # Optional: load API keys from .env file
