@@ -180,7 +180,7 @@ All settings are in `config.py`:
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 **`playwright install chromium` fails**
 ```bash
